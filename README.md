@@ -6,8 +6,9 @@ https://www.sparkfun.com/products/11345
 ## Prerequisite
 You must first install Arduino bootloader on your SparkFun Geiger Counter using one of the ISP programmers (eg. AVRISP mkII).
 
-- Fuse settings: low:0xE2, high:0xDE, extended:0xFD
-- Then burn optiboot bootloader: optiboot_atmega328.hex
+- Fuse settings: low:0xE2, high:0xDE, extended:0xFD.
+- Then burn optiboot bootloader: optiboot_atmega328.hex.
+- Place 'SparkFun Geiger Counter' folder in this repo that only includes 'boards.txt' under Documents\Arduino\hardware\ folder.
 
 Please pay due caution and DO THIS AT YOUR OWN RISK. If you burn with wrong parameters, you will brick your SparkFun Geiger Counter! (It runs on internal RC oscillator. So if you, by mistake, set fuses for use with an external oscillator, you will brick the unit. Amen.)
 
