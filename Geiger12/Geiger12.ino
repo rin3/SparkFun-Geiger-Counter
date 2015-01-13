@@ -20,6 +20,9 @@ void setup() {
   pinMode(LEDPIN, OUTPUT);
   
   // Interrupts on INT0 (OUT)
+  // The author modified the detector circuit to use active high
+  // with a PNP transistor. For unmodified circuits, change mode
+  // here to FALLING.
   attachInterrupt(0, onCount, RISING);
  
   //Initialize serial and wait for port to open:
