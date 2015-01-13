@@ -1,0 +1,25 @@
+##############################################################
+# Sparkfun Geiger Counter w/optiboot
+#  ATmega328P, Int RC Osc 8MHz
+##############################################################
+
+sfgeigero.name=[Optiboot] Sparkfun Geiger Counter (8MHz Internal)
+
+sfgeigero.upload.protocol=arduino
+sfgeigero.upload.maximum_size=32256
+sfgeigero.upload.speed=57600
+
+sfgeigero.bootloader.low_fuses=0xE2
+sfgeigero.bootloader.high_fuses=0xDE
+sfgeigero.bootloader.extended_fuses=0x05
+sfgeigero.bootloader.path=optiboot
+sfgeigero.bootloader.file=optiboot_atmega328.hex
+sfgeigero.bootloader.unlock_bits=0x3F
+sfgeigero.bootloader.lock_bits=0x0F
+
+sfgeigero.build.mcu=atmega328p
+sfgeigero.build.f_cpu=8000000L
+sfgeigero.build.core=arduino:arduino
+sfgeigero.build.variant=arduino:standard
+
+##############################################################
