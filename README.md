@@ -3,7 +3,7 @@ Arduino sources for SparkFun Geiger Counter
 SEN-09298, SEN-09848, SEN-10742 and SEN-11345
 https://www.sparkfun.com/products/11345
 
-## Prerequisite
+## Prerequisites
 You must first install Arduino bootloader on your SparkFun Geiger Counter using one of the ISP programmers (eg. AVRISP mkII).
 
 - Fuse settings: low:0xE2, high:0xDE, extended:0xFD.
