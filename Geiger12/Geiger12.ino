@@ -40,8 +40,6 @@ void loop() {
 } 
 
 void onCount() {
-  noInterrupts();
-
   // blink LED
   digitalWrite(LEDPIN, LOW);
   delay(10);
@@ -56,6 +54,4 @@ void onCount() {
   // reset intervals
   jlast = j;
   j = 0;
-  
-  interrupts();
 }
