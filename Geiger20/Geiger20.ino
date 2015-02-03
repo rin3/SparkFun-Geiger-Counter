@@ -64,8 +64,6 @@ void loop() {
 } 
 
 void onCount() {
-  noInterrupts();
-
   // blink LED
   digitalWrite(LEDPIN, LOW);
   delay(10);
@@ -75,8 +73,6 @@ void onCount() {
   
   // increment counts
   count++;
-  
-  interrupts();
 }
 
 void showCount() {
